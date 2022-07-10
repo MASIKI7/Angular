@@ -1,0 +1,15 @@
+<h1>WELCOME TO ANGULAR</h1>
+<h3>{{title}}</h3>
+<p>{{6-6}}</p>
+<button (click)="getName('Masiki')">NAME</button>
+<button (mouseover)="getNumber(100)">NUMBER</button>
+<br><br>
+<input type="text" name="" placeholder="Key up box" #box (keyup)="KeyUp(box.value)">
+<br><br>
+<input type="text" name="" placeholder="Key down box" #box1 (keydown) ='KeyUp(box1.value)' >
+<br><br>
+<input type="text" name="" placeholder="Blur box" #box2 (blur) ='KeyUp(box2.value)' >
+<br><br>
+<input type="text" name="" placeholder="Input box" #box4 (input) ='KeyUp(box4.value)' >
+<h1 (mouseover)="getNames('You dont know me')">MY NAME</h1>
+<h1 (mouseleave)="getNames('Rajabu Masiki')">YOUR NAME IS</h1> 
