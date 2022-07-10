@@ -19,6 +19,10 @@ export class AppComponent {
   };
   getNames(name:String){
     alert(name)
+  };
+  name = '';
+  DisplayName(val:string){
+   this.name = val
   }
 
 }

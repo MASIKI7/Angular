@@ -13,3 +13,8 @@
 <input type="text" name="" placeholder="Input box" #box4 (input) ='KeyUp(box4.value)' >
 <h1 (mouseover)="getNames('You dont know me')">MY NAME</h1>
 <h1 (mouseleave)="getNames('Rajabu Masiki')">YOUR NAME IS</h1> 
+
+<input type="text" name="username" placeholder="Username" id="" #box >
+<br><br>
+<button (click) = "DisplayName(box.type)">CLICK ME</button>
+<h1>{{name}}</h1>
